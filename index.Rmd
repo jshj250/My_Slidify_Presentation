@@ -1,0 +1,74 @@
+---
+title       : My Shiny Application
+subtitle    : Example of Linear Regression
+author      : jshj250
+job         : Student fron Coursera
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax]     # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Introduction
+
+1. In this Shiney application, we focus on the 'mtcars' dataset.
+2. You will learn to fit a linear regression model. 
+$y = a + b*x$
+3. The predictor (i.e. $x$) can be chosen from 'wt', 'drat' and 'qsec'.
+4. The outcome (i.e. $y$) can only be 'mpg' which means the Miles/(US) gallon.
+5. Use an empty line followed by three dashes to separate slides!
+
+```{r, echo=FALSE}
+data(mtcars)
+summary(mtcars[,c('mpg','wt','drat','qsec')])
+```
+
+--- .class #id 
+
+## mpg ~ wt
+
+- You can choose 'wt' as the predictor of linear regression model.
+- After you choose the predictor and the outcome, please click the following button 'Fit'. 
+
+```{r, echo=FALSE}
+fit <- lm(mpg~wt, mtcars)
+par(mgp=c(2,1,0)) 
+plot(fit$model[,2], fit$model[,1], xlab='Weight (lb/1000)', ylab='Miles/(US) gallon',
+     main='Fit a linear regression model on the mtcars dataset')
+abline(a=coef(fit)[1], b=coef(fit)[2], col='red', lwd=2)
+legend("topright","fittet line",lty=1,col="red",lwd=2)
+```
+
+--- .class #id 
+
+## mpg ~ drat
+- You can choose 'drat' as the predictor of linear regression model.
+- After you choose the predictor and the outcome, please click the following button 'Fit'. 
+
+```{r, echo=FALSE}
+fit <- lm(mpg~drat, mtcars)
+par(mgp=c(2,1,0)) 
+plot(fit$model[,2], fit$model[,1], xlab='Displacement (cu.in.)', ylab='Miles/(US) gallon',
+     main='Fit a linear regression model on the mtcars dataset')
+abline(a=coef(fit)[1], b=coef(fit)[2], col='red', lwd=2)
+legend("topright","fittet line",lty=1,col="red",lwd=2)
+```
+
+--- .class #id 
+
+## mpg ~ qsec
+- You can choose 'qsec' as the predictor of linear regression model.
+- After you choose the predictor and the outcome, please click the following button 'Fit'. 
+
+```{r, echo=FALSE}
+fit <- lm(mpg~qsec, mtcars)
+par(mgp=c(2,1,0)) 
+plot(fit$model[,2], fit$model[,1], xlab='1/4 mile time', ylab='Miles/(US) gallon',
+     main='Fit a linear regression model on the mtcars dataset')
+abline(a=coef(fit)[1], b=coef(fit)[2], col='red', lwd=2)
+legend("topright","fittet line",lty=1,col="red",lwd=2)
+```
+
+

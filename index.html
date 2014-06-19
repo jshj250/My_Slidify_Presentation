@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Shiny Application</title>
+  <meta charset="utf-8">
+  <meta name="description" content="My Shiny Application">
+  <meta name="author" content="jshj250">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>My Shiny Application</h1>
+    <h2>Example of Linear Regression</h2>
+    <p>jshj250<br/>Student fron Coursera</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>In this Shiney application, we focus on the &#39;mtcars&#39; dataset.</li>
+<li>You will learn to fit a linear regression model. 
+\(y = a + b*x\)</li>
+<li>The predictor (i.e. \(x\)) can be chosen from &#39;wt&#39;, &#39;drat&#39; and &#39;qsec&#39;.</li>
+<li>The outcome (i.e. \(y\)) can only be &#39;mpg&#39; which means the Miles/(US) gallon.</li>
+<li>Use an empty line followed by three dashes to separate slides!</li>
+</ol>
+
+<pre><code>##       mpg             wt            drat           qsec     
+##  Min.   :10.4   Min.   :1.51   Min.   :2.76   Min.   :14.5  
+##  1st Qu.:15.4   1st Qu.:2.58   1st Qu.:3.08   1st Qu.:16.9  
+##  Median :19.2   Median :3.33   Median :3.69   Median :17.7  
+##  Mean   :20.1   Mean   :3.22   Mean   :3.60   Mean   :17.8  
+##  3rd Qu.:22.8   3rd Qu.:3.61   3rd Qu.:3.92   3rd Qu.:18.9  
+##  Max.   :33.9   Max.   :5.42   Max.   :4.93   Max.   :22.9
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>mpg ~ wt</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>You can choose &#39;wt&#39; as the predictor of linear regression model.</li>
+<li>After you choose the predictor and the outcome, please click the following button &#39;Fit&#39;. </li>
+</ul>
+
+<p><img src="assets/fig/unnamed-chunk-2.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>mpg ~ drat</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>You can choose &#39;drat&#39; as the predictor of linear regression model.</li>
+<li>After you choose the predictor and the outcome, please click the following button &#39;Fit&#39;. </li>
+</ul>
+
+<p><img src="assets/fig/unnamed-chunk-3.png" alt="plot of chunk unnamed-chunk-3"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>mpg ~ qsec</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>You can choose &#39;qsec&#39; as the predictor of linear regression model.</li>
+<li>After you choose the predictor and the outcome, please click the following button &#39;Fit&#39;. </li>
+</ul>
+
+<p><img src="assets/fig/unnamed-chunk-4.png" alt="plot of chunk unnamed-chunk-4"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='mpg ~ wt'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='mpg ~ drat'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='mpg ~ qsec'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
